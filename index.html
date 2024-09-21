@@ -153,8 +153,8 @@
 
       <!-- product -->
 
-      <div class="prouct-row">
-
+      <div class="prouct-row product-list" id="productContainer">
+<!-- 
           <div class="single-product">
             <img src="./assets/images/b1.jpg" alt="">
             <h5>Original</h5>
@@ -203,83 +203,135 @@
               <li>Gold foil or Silver foil</li>
               <li>Spot gloss or Raised spot gloss</li>
             </ul>
-          </div>
+          </div> -->
 
         </div>
        <!--  -->
 
-       <!-- Choose your quantity -->
-     <h6 style="padding-top: 50px;">Choose your quantity</h6>
-      <div class="table-container">
-         <div class="table-caption">
-          <strong>Quantity</strong>
-          <strong>Price per card</strong>
-          <strong>Pack price</strong>
-         </div>
-         <!-- 1 -->
-          <div class="quantity-item">
-            <span> 50</span>
-            <span>$0.42	</span>
-            <span>$21.00</span>
-          </div>
-         <!--  -->
-         
-          <!-- 2 -->
-          <div class="quantity-item">
-            <span> 100	</span>
-            <span>$0.42	</span>
-            <span>$42.00</span>
-          </div>
-         <!--  -->
-          <!-- 2 -->
-          <div class="quantity-item">
-            <span> 150	</span>
-            <span>$0.42	</span>
-            <span> $63.00 </span>
-          </div>
-         <!--  -->
-           <!-- 3 -->
-           <div class="quantity-item" style="border-bottom: 0;">
-            <span>200		</span>
-            <span class="position-changing">$0.37	</span>
-            <span> $73.00 <s> $84.00</s> </span>
-          </div>
-         <!--  -->
+<!-- Choose your corners -->
+ <div class="containers mt-5">
+  <h5>Choose your corners
+  </h5>
+ <div class="corners">
+  <div class="single-product selected" style="height: 90px;">
+    <div class="flex-item__">
+      <div class="product-name">
+        <input type="radio" name="product" id="radio-square" value="square" style="display: none;">
+        <h5>Square</h5>
+        <ul style="margin: 5px 0 !important;">
+          <li>Sharp and Stylish</li>
+        </ul>
+      </div>
+      <div class="product-img">
+        <img src="./assets/images/square.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="single-product selected" style="height: 90px;">
+    <div class="flex-item__">
+      <div class="product-name">
+        <input type="radio" name="product" id="radio-rounded" value="rounded" style="display: none;">
+        <h5>Rounded
+        </h5>
+        <ul style="margin: 5px 0 !important;">
+          <li>  Smooth & Rounded</li>
+        </ul>
+      </div>
+      <div class="product-img">
+        <img src="./assets/images/circle.png" alt="">
+      </div>
+    </div>
+  </div>
+ </div>
+ </div>
 
-         <!-- 4 -->
-         <div class="quantity-item need-border">
-          <span>400	 	</span>
-          <span class="position-changing">$0.32	</span>
-          <span> $128.00<s> $168.00	</s> <br> <small>RECOMMENDED
-          </small> </span>
-        </div>
-       <!--  -->
-        <!-- 3 -->
-        <div class="quantity-item" >
-          <span>	600	</span>
-          <span class="position-changing">	$0.27	</span>
-          <span>  $162.00	<s> $252.00 </s> </span>
-        </div>
-       <!--  -->
 
-       <div class="quantity-item"  >
-        <span>	800</span>
-        <span class="position-changing">	$0.27	</span>
-        <span>  $216.00 	<s> $336.00</s> </span>
-      </div>
-      	
-    
-      <div class="quantity-item"  >
-        <span>	Show more quantities	</span>
-        <span><i class="fa-solid fa-arrow-right"></i></span>
-        
-      </div>
-      <div class="quantity-item"  style="border-bottom: 0;"> <span>	For more pricing info, see our <a href="">Shipping and Cost Calculator.
-        </a>
-        </span></div>
-       
-        
-      </div>
+<!-- Choose your quantity -->
+<!-- Choose your quantity -->
+<h6 style="padding-top: 50px;">Choose your quantity</h6>
+<div class="table-container">
+  <div class="table-caption">
+    <strong>Quantity</strong>
+    <strong>Price per card</strong>
+    <strong>Pack price</strong>
+  </div>
+
+  <!-- 1 -->
+  <div class="quantity-item">
+    <input type="radio" name="quantity" value="21.00" data-quantity="50" data-price="0.42">
+    <span>50</span>
+    <span>$0.42</span>
+    <span>$21.00</span>
+  </div>
+
+  <!-- 2 -->
+  <div class="quantity-item">
+    <input type="radio" name="quantity" value="42.00" data-quantity="100" data-price="0.42">
+    <span>100</span>
+    <span>$0.42</span>
+    <span>$42.00</span>
+  </div>
+
+  <!-- 3 -->
+  <div class="quantity-item">
+    <input type="radio" name="quantity" value="63.00" data-quantity="150" data-price="0.42">
+    <span>150</span>
+    <span>$0.42</span>
+    <span>$63.00</span>
+  </div>
+
+  <!-- 4 -->
+  <div class="quantity-item" style="border-bottom: 0;">
+    <input type="radio" name="quantity" value="73.00" data-quantity="200" data-price="0.37">
+    <span>200</span>
+    <span class="position-changing">$0.37</span>
+    <span>$73.00 <s>$84.00</s></span>
+  </div>
+
+  <!-- 5 -->
+  <div class="quantity-item active" style="border-top: 1px solid #dfe3e7;">
+    <input type="radio" name="quantity" value="128.00" data-quantity="400" data-price="0.32" checked>
+    <span>400</span>
+    <span class="position-changing">$0.32</span>
+    <span>$128.00 <s>$168.00</s> <br> <small>RECOMMENDED</small></span>
+  </div>
+
+  <!-- 6 -->
+  <div class="quantity-item">
+    <input type="radio" name="quantity" value="162.00" data-quantity="600" data-price="0.27">
+    <span>600</span>
+    <span class="position-changing">$0.27</span>
+    <span>$162.00 <s>$252.00</s></span>
+  </div>
+
+  <!-- 7 -->
+  <div class="quantity-item">
+    <input type="radio" name="quantity" value="216.00" data-quantity="800" data-price="0.27">
+    <span>800</span>
+    <span class="position-changing">$0.27</span>
+    <span>$216.00 <s>$336.00</s></span>
+  </div>
+
+  <!-- Show more quantities -->
+  <div class="quantity-items">
+    <span>Show more quantities</span>
+    <span><i class="fa-solid fa-arrow-right"></i></span>
+  </div>
+
+  <!-- More pricing info -->
+  <div class="quantity-items" style="border-bottom: 0;">
+    <span>For more pricing info, see our <a href="#">Shipping and Cost Calculator.</a></span>
+  </div>
+
+  <!-- Total Price Display -->
+</div>
+
+
+
+
+
+
+  
 
       <!-- brand card -->
       <div class="brand-card-container">
@@ -342,7 +394,7 @@
         <!-- product show case -->
         <h6 style="padding-top: 30px;">How would you like to design your cards?</h6>
          <div class="products">
-          <div class="single-product new-height active-color">
+          <div class="single-product new-height active" data-id="1">
             <img style="object-fit: cover;" src="./assets/images/pt1.png" alt="">
             <h5>Use our templates</h5>
             <ul>
@@ -351,7 +403,7 @@
             </ul>
           </div>
 
-          <div class="single-product new-height">
+          <div class="single-product new-height" data-id="2">
             <img style="object-fit: cover;" src="./assets/images/pt2.png" alt="">
             <h5>Design here online</h5>
             <ul>
@@ -360,7 +412,7 @@
             </ul>
           </div>
           
-          <div class="single-product new-height">
+          <div class="single-product new-height" data-id="3">
             <img style="object-fit: cover; " src="./assets/images/pt3.png" alt="">
             <h5>Upload a full design</h5>
             <ul>
@@ -946,7 +998,7 @@
 
 <!-- script -->
 <!-- bootstrap script -->
- <script src="./assets/js/index.js"></script>
+<script src="./assets/js/index.js"></script>
 <script src="https://kit.fontawesome.com/1a08811769.js" crossorigin="anonymous"></script>
 <script src="./assets/js/productslide.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
