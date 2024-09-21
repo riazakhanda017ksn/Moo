@@ -1162,6 +1162,10 @@ h6.font-weight_ {
     .flex-item__ ul{
         margin: 5px 0 !important;
     }
+    .quantity-item input {
+        position: absolute;
+        opacity: 0;
+    }
 @media screen and (max-width: 990px){
   
     .d_none{
