@@ -40,75 +40,44 @@
     <div class="row">
       <!-- card left -->
       <div class="col-lg-6">
-        <div class = "product-imgs">
-            <div class = "img-display">
-              <div class = "img-showcase">
-                <img src = "./assets/images/1.jpg" alt = "shoe image">
-                <img src = "./assets/images/2.jpg" alt = "shoe image">
-                <img src = "./assets/images/3.jpg" alt = "shoe image">
-                <img src = "./assets/images/4.jpg" alt = "shoe image">
-              </div>
-            </div>
-            <div class = "img-select">
-              <div class = "img-item">
-                <a href = "#" data-id = "1">
-                  <img src = "./assets/images/1.jpg" alt = "shoe image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "2">
-                  <img src = "./assets/images/2.jpg" alt = "shoe image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "3">
-                  <img src = "./assets/images/3.jpg" alt = "shoe image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "4">
-                  <img src = "./assets/images/4.jpg" alt = "shoe image">
-                </a>
-              </div>
-            </div>
-            <div class="row py-4">
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="center-item">
-                    <img class="image" src="./assets/images/1.png" alt=""></div>
-                  </div>
-                  <div class="col-lg-10">
-
-                    <div class="varient-content">
-                      <h6>“The best business card printing service”</h6>
-          
-                      <p>Named a New York Times Wirecutter pick, August 2023.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="center-item">
-                    <img class="drop" src="./assets/images/2.png" alt=""></div>
-  
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="varient-content">
-                      <h6>
-                        Free full-color printing</h6>
-          
-                      <p>Print full color on both sides of your business cards.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              
+        <div class="product-imgs">
+          <!-- Existing code for slider -->
+          <div class="img-display">
+            <div class="img-showcase" id="imgShowcase">
+              <!-- Images will be dynamically updated here -->
+              <img src="./assets/images/1.jpg" alt="slider image">
+              <img src="./assets/images/2.jpg" alt="slider image">
+              <img src="./assets/images/3.jpg" alt="slider image">
+              <img src="./assets/images/4.jpg" alt="slider image">
             </div>
           </div>
+      
+          <div class="img-select">
+            <!-- Thumbnails -->
+            <div class="img-item">
+              <a href="#" data-id="1">
+                <img src="./assets/images/1.jpg" alt="slider image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="2">
+                <img src="./assets/images/2.jpg" alt="slider image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="3">
+                <img src="./assets/images/3.jpg" alt="slider image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="4">
+                <img src="./assets/images/4.jpg" alt="slider image">
+              </a>
+            </div>
+          </div>
+      
+          <!-- Additional content remains the same -->
+        </div>
           
           
           
@@ -153,7 +122,7 @@
 
       <!-- product -->
 
-      <div class="prouct-row product-list" id="productContainer">
+      <!-- <div class="prouct-row product-list" id="productContainer"> -->
 <!-- 
           <div class="single-product">
             <img src="./assets/images/b1.jpg" alt="">
@@ -205,8 +174,110 @@
             </ul>
           </div> -->
 
-        </div>
+        <!-- </div> -->
        <!--  -->
+       <div class="prouct-row product-list" id="productContainer">
+        <!-- Original Card -->
+        <div class="single-product" data-product="0">
+          <input type="radio" name="paper" value="Original" id="product-0" hidden>
+          <label for="product-0">
+            <img src="./assets/images/b1.jpg" alt="Original">
+            <h5>Original</h5>
+            <ul>
+              <li>16pt thickness</li>
+              <li>Available in matte or gloss finish</li>
+              <li>Our “feel good” premium paper</li>
+            </ul>
+          </label>
+        </div>
+      
+        <!-- Cotton Card -->
+        <div class="single-product" data-product="1">
+          <input type="radio" name="paper" value="Cotton" id="product-1" hidden>
+          <label for="product-1">
+            <img src="./assets/images/b2.jpg" alt="Cotton">
+            <h5>Cotton</h5>
+            <ul>
+              <li>18pt thickness</li>
+              <li>Uncoated and naturally bright white</li>
+              <li>Made from cotton linters</li>
+            </ul>
+          </label>
+        </div>
+      
+        <!-- Super Card -->
+        <div class="single-product" data-product="2">
+          <input type="radio" name="paper" value="Super" id="product-2" hidden>
+          <label for="product-2">
+            <img src="./assets/images/b3.jpg" alt="Super">
+            <h5>Super</h5>
+            <ul>
+              <li>18pt thickness</li>
+              <li>Available in Soft Touch or High Gloss</li>
+              <li>Silky smooth, strong and durable</li>
+            </ul>
+          </label>
+        </div>
+      
+        <!-- Luxe Card -->
+        <div class="single-product" data-product="3">
+          <input type="radio" name="product" value="Luxe" id="product-3" hidden>
+          <label for="product-3">
+            <img src="./assets/images/b4.jpg" alt="Luxe">
+            <h5>Luxe</h5>
+            <ul>
+              <li>32pt thickness</li>
+              <li>Naturally textured – write on either side!</li>
+              <li>Choice of eight eye-catching color seams</li>
+            </ul>
+          </label>
+        </div>
+      
+        <!-- Special Finishes Card -->
+        <div class="single-product" data-product="4">
+          <input type="radio" name="paper" value="Special Finishes" id="product-4" hidden>
+          <label for="product-4">
+            <img src="./assets/images/b5.jpg" alt="Special Finishes">
+            <h5>Special Finishes</h5>
+            <ul>
+              <li>18pt thickness with Soft Touch finish</li>
+              <li>Gold foil or Silver foil</li>
+              <li>Spot gloss or Raised spot gloss</li>
+            </ul>
+          </label>
+        </div>
+      </div>
+
+      <!-- Luxe card radio input -->
+      <div id="colorSelection" style="display: none;">
+        <h5>Choose your seam color
+        </h5>
+        <ul id="colorOptions">
+          <li data-color="Raven Black">Raven Black
+            <span class="raven_black" style="background-color: black;"></span>
+          </li>
+          <li data-color="Chili Red" >Chili Red
+            <span class="chili_reed" style="background: #E80000;"></span>
+          </li>
+          <li data-color="Ocean Blue">Ocean Blue 
+            <span class="ocean_blue" style="background: #0084E4;"></span>
+          </li>
+          <li data-color="Polar White">Polar White
+            <span class="polar_white" style="background:#FFF ;"></span>
+          </li>
+          <li data-color="Tiger Orange">Tiger Orange
+            <span class="tiger_orange" style="background: #FF7F00;"></span>
+          </li>
+          <li data-color="Forest Green">Forest Green <span class="forest_green" style="background: #0E9C00;"></span>
+        </li>
+          <li data-color="Neon Pink"> Neon Pink<span class="neon_pink" style="background: #FE47AB;"></span>  </li>
+          <li data-color="Sunny Yellow">Sunny Yellow  <span class="sunny_ellow" style="background: #FED300;"></span>
+          </li>
+        </ul>
+      </div>
+
+      
+      
 
 <!-- Choose your corners -->
  <div class="containers mt-5">
@@ -313,10 +384,46 @@
   </div>
 
   <!-- Show more quantities -->
-  <div class="quantity-items">
+  <div class="quantity-items" id="see-more-btn">
     <span>Show more quantities</span>
     <span><i class="fa-solid fa-arrow-right"></i></span>
   </div>
+   
+    <!-- 7 -->
+    <div class="quantity-item hidden_">
+      <input type="radio" name="quantity" value="216.00" data-quantity="800" data-price="0.27">
+      <span>800</span>
+      <span class="position-changing">$0.27</span>
+      <span>$216.00 <s>$336.00</s></span>
+    </div>
+
+    <div class="quantity-item  hidden_" style="border-top: 1px solid #dfe3e7;">
+      <input type="radio" name="quantity" value="128.00" data-quantity="400" data-price="0.32" checked>
+      <span>400</span>
+      <span class="position-changing">$0.32</span>
+      <span>$128.00 <s>$168.00</s> </span>
+    </div>
+
+    <div class="quantity-item hidden_" style="border-top: 1px solid #dfe3e7;">
+      <input type="radio" name="quantity" value="128.00" data-quantity="400" data-price="0.32" checked>
+      <span>400</span>
+      <span class="position-changing">$0.32</span>
+      <span>$128.00 <s>$168.00</s> </span>
+    </div>
+
+    <div class="quantity-item hidden_" style="border-top: 1px solid #dfe3e7;">
+      <input type="radio" name="quantity" value="128.00" data-quantity="400" data-price="0.32" checked>
+      <span>400</span>
+      <span class="position-changing">$0.32</span>
+      <span>$128.00 <s>$168.00</s> </span>
+    </div>
+
+    <div class="quantity-item hidden_" style="border-top: 1px solid #dfe3e7;">
+      <input type="radio" name="quantity" value="128.00" data-quantity="400" data-price="0.32" checked>
+      <span>400</span>
+      <span class="position-changing">$0.32</span>
+      <span>$128.00 <s>$168.00</s> </span>
+    </div>
 
   <!-- More pricing info -->
   <div class="quantity-items" style="border-bottom: 0;">
@@ -442,8 +549,79 @@
     </div>
   </div>
 <!--  -->
+
+<!-- design square changing -->
+
+<div class="design_____tool">
+<div class="dark-nav">
+  <div class="container">
+  
+    <span><small>Design guidelines</small></span>
+  </div>
+</div>
+<!-- design guideline -->
+ <div class="container">
+  <div class="col-lg-7">
+  <div class="design-guideline">
+    <h4>Design Guidelines
+    </h4>
+    <div class="layout__item u-2/3@medium u-7/12@large u-paddingTop-m@medium" bis_skin_checked="1">
+      <div class="media media--small u-marginBottom-m" bis_skin_checked="1">
+          <div class="media__img" bis_skin_checked="1">
+  
+          <img src="./assets/images/s1.png" alt="">
+          </div>
+          <div class="media__body" bis_skin_checked="1">
+              <h6 class="u-fontFamily-primaryMedium"> Bleed Area: 3.66" x 2.16"</h6>
+              <p>Make sure that your background extends to fill the bleed to avoid your Business Cards having white edges when trimmed.</p>
+          </div>
+      </div>
+      <div class="media media--small u-marginBottom-m" bis_skin_checked="1">
+          <div class="media__img" bis_skin_checked="1">
+            <img src="./assets/images/s2.png" alt="">
+
+          </div>
+          <div class="media__body" bis_skin_checked="1">
+              <h6 class="u-fontFamily-primaryMedium">Trim: 3.50" x 2.0"</h6>
+              <p>This is where we aim to cut your cards.</p>
+          </div>
+      </div>
+      <div class="media media--small u-marginBottom-m" bis_skin_checked="1">
+          <div class="media__img" bis_skin_checked="1">
+ <img src="./assets/images/s3.png" alt="">
+          </div>
+          <div class="media__body" bis_skin_checked="1">
+              <h6 class="u-fontFamily-primaryMedium">Safe Area: 3.34" x 1.84"</h6>
+              <p>Make sure any important parts of your Business Card design (eg text and logos) are inside of the safe area, otherwise they may be cut off.</p>
+          </div>
+      </div>
+
+
+
+    <br>
+    <br>
+
+      <div class="media media--small u-marginBottom-m" bis_skin_checked="1">
+        <div class="media__img" bis_skin_checked="1">
+<img src="./assets/images/s4.png" alt="">
+        </div>
+        <div class="media__body" bis_skin_checked="1">
+            <h6 class="u-fontFamily-primaryMedium">Special Finish Artwork</h6>
+            <p>To create standard-size Business Cards with a special finish, you'll need two files. One for the artwork, one for the special finish. The artwork file will house the main design image. Use a CMYK color file in PDF, PNG, JPG, or GIF format. The special finish file will define where it's applied on top of your design. Use a black and white PDF.</p>
+            <a href="" style="padding-bottom: 50px;">Guide for designing with your own tools ></a>
+            <br>
+
+        </div>
+    </div
+
+              </div>
+  </div></div>
+ </div>
+</div>
+
+
 <!-- banner -->
-<div class="brand-more my-4">
+<div class="brand-more my-4" style="background: white; padding: 80px 0;">
   <div class="container text-center">
       <div class="banner-item ">
         <h4>Brand more. Save more. Work less.</h4>
